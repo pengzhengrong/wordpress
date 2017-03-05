@@ -1,0 +1,186 @@
+/*
+* PAGE LISTING CATEGORIES PLUGIN - WIDGET STYLESHEET
+*/
+
+/**
+ * Copyright © 2016 Infolab Software I Serveis S.L.U.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+**/
+
+
+/* 
+ * |-----------------|
+ * | GENERAL STYLING |
+ * |-----------------|
+ */
+.wp-plc-list-categories-widget * {
+  -webkit-font-smoothing: antialiased;
+}
+.wp-plc-list-categories-widget ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+}
+.wp-plc-list-categories-widget ul {
+  padding: 0;
+  margin: 0;
+}
+.wp-plc-list-categories-widget ul li a {
+  display: block;
+  outline: none;
+  text-decoration: none;
+}
+.wp-plc-list-categories-widget > ul.countpos-extleft > li > a {
+  padding-left: 42px;
+}
+/*REVISAR SUBCATEGORIES*/
+.wp-plc-list-categories-widget ul li.current-cat.selected > a,
+.widget .wp-plc-list-categories-widget ul.children li.current-cat.selected > a {
+  color: #F5F5F5;
+}
+.wp-plc-list-categories-widget .accordion-btn {
+  color: #e1e1e1;
+}
+.wp-plc-list-categories-widget span.accordion-btn-wrap, .wp-plc-list-categories-widget span.accordion-btn-wrap.accordion-active {
+    width: 20px !important;
+}
+.wp-plc-list-categories-widget li.cat-item.cat-parent.has-subnav > a {
+    margin-right: 5px !important;
+}
+
+
+
+/*
+ * |-------------|
+ * | COUNT STYLE |
+ * |-------------|
+ */
+.wp-plc-list-categories-widget ul li .count {
+  min-width: 20px;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  background: #797979;
+  border-radius: 50%;
+  height: 20px;
+  line-height: 20px;
+}
+.wp-plc-list-categories-widget ul.countpos-extleft li span.count {
+  left: 10px;
+  right: auto;
+}
+.wp-plc-list-categories-widget ul.togglebtn-left.countpos-extright li span.count {
+  left: auto;
+  right: 15px;
+}
+.wp-plc-list-categories-widget ul.togglebtn-left.countpos-extleft li span.count {
+  left: 40px;
+  right: auto;
+}
+
+/*
+ * |---------------------|
+ * | SUBCATEGORIES STYLE |
+ * |---------------------|
+ */
+.wp-plc-list-categories-widget ul > li li {
+  margin: 0 !important;
+}
+.wp-plc-list-categories-widget ul > li {
+  margin: 0;
+  padding: 0;
+}
+.wp-plc-list-categories-widget ul > li > ul > li {
+  background: #F5F5F5;
+}
+.wp-plc-list-categories-widget ul > li > ul > li > a  span {
+  color: #8d8d8d;
+}
+.wp-plc-list-categories-widget > ul > li > ul > li > ul > li {
+  background: #DBDBDB;
+}
+.wp-plc-list-categories-widget li a {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 14px 22px;
+  font-weight: 100;
+}
+.wp-plc-list-categories-widget > ul > li > ul > li > a, 
+.wp-plc-list-categories-widget > ul > li > ul > li > .accordion-btn-wrap {
+  border-bottom: 1px solid #e1e1e1;
+}
+.wp-plc-list-categories-widget > ul > li > ul > li > a {
+  padding-left: 30px;
+}
+.wp-plc-list-categories-widget > ul > li > ul > li > ul > li > a {
+  padding-left: 45px;
+}
+.wp-plc-list-categories-widget > ul > li > ul > li > ul > li > ul > li > a {
+  padding-left: 60px;
+}
+.wp-plc-list-categories-widget > ul.countpos-extleft > li > ul > li > a {
+  padding-left: 50px;
+}
+.wp-plc-list-categories-widget > ul.countpos-extleft > li > ul > li > ul > li > a {
+  padding-left: 65px;
+}
+.wp-plc-list-categories-widget > ul.countpos-extleft > li > ul > li > ul > li > ul > li > a {
+  padding-left: 80px;
+}
+.wp-plc-list-categories-widget > ul > li.current-cat > ul > li  {
+    border-left: 2px solid #d4d4d4;
+}
+.wp-plc-list-categories-widget .children li.current-cat.selected {
+    background-color:  #3875b6;
+    border-left-color: #769BC2;
+}
+.wp-plc-list-categories-widget .children li.current-cat.selected > a > span {
+    color: #F5F5F5;
+}
+
+
+/*
+ * |------------------|
+ * | CATEGORIES STYLE |
+ * |------------------|
+ */
+.wp-plc-list-categories-widget > ul > li {
+  background: #FFFFFF;
+}
+.wp-plc-list-categories-widget  > ul > li.current-cat.selected {
+     background:#3875b6;
+} 
+.wp-plc-list-categories-widget  > ul > li.current-cat.selected > a {
+    background:#3875b6;
+    border-left: 2px solid #3875b6 ;
+}
+.wp-plc-list-categories-widget > ul > li > a {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 14px 22px;
+  background: #FFFFFF;
+  color: #222222;
+}
+.wp-plc-list-categories-widget > ul > li.current-cat > a {
+        border-left: 2px solid #769BC2;
+        color: #3875B6;
+        background: #F5F5F5;
+}
+.wp-plc-list-categories-widget > ul > li.current-cat {
+   background: #F5F5F5; 
+}

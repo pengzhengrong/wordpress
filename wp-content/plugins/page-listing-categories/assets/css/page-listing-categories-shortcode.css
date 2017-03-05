@@ -1,0 +1,99 @@
+/*
+* PAGE LISTING CATEGORIES PLUGIN - SHORTCODE STYLESHEET
+*/
+
+/**
+ * Copyright © 2016 Infolab Software I Serveis S.L.U.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+**/
+
+/* PARENTS */
+.page-listing-categories{ }
+.plc-items-container { clear: both; }
+.plc-items-container > :nth-child(3n+1) { margin-left: 0 !important; }
+.plc-items-container > :nth-child(3n+3) { margin-right: 0 !important; }
+
+/* CATEGORIES / SUBCATEGORIES GENERAL STYLING */
+.plc-title h2, .plc-title h3 { font-size: 20px; color: #3875b6; }
+.plc-header { margin: 15px; height: 70px; }
+.plc-image { float: left; width:20%; overflow: hidden; max-height: 70px; border-radius: 2px; }
+.plc-title { float: left; width:80%; padding-left: 15px; }
+.plc-desc { margin: 15px; clear: both; text-align: justify; text-justify: inter-word; }
+.plc-category{
+    height:225px;
+    width: 32%; 
+    float: left;
+    margin: 1%;
+    border-radius:2px;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-right:1px solid #e1e1e1;
+    border-bottom: 2px solid #3875b6 !important;
+
+}
+.plc-category:hover {
+    border-top: 1px solid #3875b6 !important;
+    border-left: 1px solid #3875b6 !important;
+    border-right:1px solid #3875b6 !important;
+    box-shadow:0 0 8px #e1e1e1;
+    transition-property: box-shadow;
+}
+.plc-category a p { color: #A79797; }
+.plc-category a:hover, .plc-category a:active, .plc-category a:focus { text-decoration: none; }
+
+/* SUBCATEGORIES */
+.plc-subcategories-header-back { float: right; margin-bottom: 15px; }
+.plc-subcategories-header-title { float: left; }
+.plc-subcategories-header-title hr { border: 1px solid #3875b6; }
+
+/*BUTTONS*/
+a.plc-button {
+    display: inline-block;
+    color: #444444 !important;
+    background-color: #FCFCFC;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-color: #3875B6 !important;
+    border-bottom-width: 2px;
+    text-decoration: none !important;
+}
+a.plc-button:hover, a.plc-button:focus, a.plc-button.hover, a.plc-button.focus {
+    background-color: #ebebeb;
+    border-color: rgba(56,117,182,0.5);
+}
+a.plc-button:active, a.plc-button.active {
+    background-color: #3875b6;
+    color:#FCFCFC !important;
+    border-color: #e1e1e1 !important;
+    border-bottom-color: #e1e1e1 !important;
+}
+@media screen and (max-width: 768px) {
+	.plc-category{
+		height:auto;
+		width: 100%; 
+		float: none;
+		margin: 5px 0 0 0;
+	}	
+}
+
+
+
+
+
